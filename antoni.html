@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login básico</title>
+
+<style>
+
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.caja-login {
+    background-color: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 95%;
+    border: none;
+    cursor: pointer;
+}
+#mensaje {
+    font-weight: bold;
+    margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+
+
+<h1>Login de mi negocio</h1>
+<div class="caja-login">
+
+<h2>Iniciar sesión</h2>
+
+
+<input type="text" id="usuario" placeholder="admin">
+<br>
+
+
+<input type="password" id="contrasena" placeholder="1234">
+<br>
+
+
+<button onclick="validarLogin()">Ingresar</button>
+
+
+
+<p id="mensaje"></p>
+
+</div>
+
+<script>
+
+function validarLogin() {
+
+  
+    let usuario = document.getElementById("admin").value;
+    let contrasena = document.getElementById("1234").value;
+
